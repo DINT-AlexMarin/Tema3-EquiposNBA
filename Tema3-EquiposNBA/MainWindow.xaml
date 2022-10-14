@@ -11,7 +11,7 @@
             <Setter Property="Width" Value="200"></Setter>
             <Setter Property="Stretch" Value="Fill"></Setter>
         </Style>
-        <Style TargetType="{x:Type Border}">
+        <Style TargetType="{x:Type Border}" x:Key="Bordes">
             <Setter Property="BorderBrush" Value="Black"></Setter>
             <Setter Property="BorderThickness" Value="3"></Setter>
             <Setter Property="Margin" Value="5"></Setter>
@@ -44,7 +44,7 @@
         </Style>
     </Window.Resources>
     <StackPanel>
-        <Border>
+        <Border Style="{StaticResource Bordes}">
             <StackPanel Style="{StaticResource 1}">
                 
                 <Label Content="Los Ángeles Lakers"> </Label>
@@ -57,7 +57,7 @@
                 </WrapPanel>
             </StackPanel>
         </Border>
-        <Border>
+        <Border Style="{StaticResource Bordes}">
             <StackPanel Style="{StaticResource 2}">
                 <Label Foreground="White" Content="Miami Heat"></Label>
                 <WrapPanel>
